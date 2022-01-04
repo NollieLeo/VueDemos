@@ -1,28 +1,35 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <HelloWorld msg="Welcome to Your Vue.js App" />
+    <!-- todolists -->
+    <h2>todolists</h2>
+    <TodoLists></TodoLists>
+    <!-- form -->
+    <Form></Form>
+    <!-- ComponentsTest -->
+    <ComponentsTest></ComponentsTest>
+    <!-- Tabs -->
+    <Tabs></Tabs>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import HelloWorld from "./components/HelloWorld.vue";
+import TodoLists from "./components/TodoLists.vue";
+import Form from "./components/FormTest.vue";
+import ComponentsTest from "./components/ComponentsTest";
+import Tabs from "./components/TabComponents";
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
-    HelloWorld
-  }
-}
+    HelloWorld,
+    TodoLists,
+    Form,
+    ComponentsTest,
+    Tabs,
+  },
+};
 </script>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
+<style></style>
